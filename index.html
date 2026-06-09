@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimaMomCare | Coffrets Post-Partum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        creme: '#FDFBF7',
+                        sauge: '#556B2F',
+                        saugeDark: '#435524',
+                        lin: '#F4F0E6',
+                        texte: '#334139',
+                        texteDark: '#2D3A32',
+                        orDoux: '#8B7E66'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-creme text-texte min-h-screen relative selection:bg-[#E2ECE9]">
+
+    <!-- NAVBAR -->
+    <nav class="border-b border-[#EAE5DB] bg-creme/80 backdrop-blur sticky top-0 z-40 px-6 py-4 flex justify-between items-center">
+        <span class="text-2xl font-serif tracking-widest text-texteDark font-semibold">PrimaMomCare</span>
+        <button onclick="toggleCart(true)" class="relative p-2 text-texteDark hover:text-sauge transition font-medium">
+            Panier (<span id="cart-count">0</span>)
+        </button>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="max-w-5xl mx-auto px-6 py-16 text-center md:py-24">
+        <h1 class="text-4xl md:text-6xl font-serif text-texteDark leading-tight max-w-4xl mx-auto font-medium">
+            Prendre soin de soi après la naissance, c'est aussi se donner le droit de guérir.[span_0](start_span)[span_0](end_span)[span_1](start_span)[span_1](end_span)
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-[#5F6E65] max-w-2xl mx-auto font-light">
+            La douceur au service du post-partum. Des coffrets exclusifs pensés avec bienveillance pour accompagner votre rétablissement.[span_2](start_span)[span_2](end_span)[span_3](start_span)[span_3](end_span)
+        </p>
+        <div style="margin-top: 2.5rem;">
+            <a href="#boutique" class="bg-sauge text-creme px-8 py-4 rounded-full font-medium shadow-sm hover:bg-saugeDark transition duration-300">
+                Découvrir nos coffrets
+            </a>
+        </div>
+    </header>
+
+    <!-- MISSION / HISTOIRE -->
+    <section class="bg-lin py-16 px-6">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-2xl font-serif text-texteDark mb-4 font-semibold">Douceur, soutien et attention</h2>
+            <p class="text-[#5F6E65] leading-relaxed mb-4 text-sm md:text-base">
+              Après la naissance d'un enfant, le corps, le cœur et l'esprit d'une maman traversent un chemin de guérison et d'adaptation. C'est un temps où tout change.[span_4](start_span)[span_4](end_span)[span_5](start_span)[span_5](end_span)
+            </p>
+            <p class="text-[#5F6E65] leading-relaxed text-sm md:text-base">
+              Nos coffrets Post-Partum sont composés de produits simples, sécuritaires et bienfaisants, pensés pour le réconfort de l'âme. Parce que prendre soin de soi, c'est aussi prendre soin de son bébé.[span_6](start_span)[span_6](end_span)[span_7](start_span)[span_7](end_span)
+            </p>
+          </div>
+          <div class="border-l-2 border-sauge pl-6 italic bg-creme/50 p-6 rounded-r-lg">
+            <h3 class="text-lg font-semibold text-texteDark not-italic mb-2">Mon Histoire</h3>
+            <p class="text-[#5F6E65] text-sm leading-relaxed">
+              « Après mes accouchements, je me suis sentie perdue. Mon corps avait changé, je ne savais plus quels produits utiliser, ni comment prendre soin de moi. C'est de là qu'est née PrimaMomCare : pour que les futures mamans se sentent moins seules dans leur nouveau rôle, tout en douceur. »[span_8](start_span)[span_8](end_span)[span_9](start_span)[span_9](end_span)
+            </p>
+            <span class="block mt-4 text-texteDark font-medium not-italic text-sm">— Besa, Fondatrice</span>
+          </div>
+        </div>
+    </section>
+
+    <!-- BOUTIQUE -->
+    <section id="boutique" class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-serif text-center text-texteDark mb-12 font-semibold">Nos Coffrets Exclusifs</h2>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+          
+          <!-- COFFRET VOIE BASSE -->
+          <div class="bg-white rounded-2xl border border-[#EAE5DB] overflow-hidden shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="h-64 bg-gray-200 relative bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1512909241856-67e17415d2ce?auto=format&fit=crop&q=80&w=600');">
+                  <div class="absolute inset-0 bg-black/10"></div>
+                  <span class="absolute top-4 right-4 bg-white/90 backdrop-blur text-texteDark px-4 py-1.5 rounded-full text-sm font-semibold tracking-wider">
+                    138.39 $ CAD
+                  </span>
+                </div>
+                <div class="p-8">
+                  <h3 class="text-2xl font-serif text-texteDark mb-3 font-semibold">Coffret Voie Basse</h3>
+                  <p class="text-sm text-[#5F6E65] mb-6 leading-relaxed font-light">Un coffret haut de gamme pensé pour accompagner votre guérison après la naissance, avec douceur et bienveillance.[span_10](start_span)[span_10](end_span)</p>
+                  
+                  <h4 class="text-xs uppercase tracking-wider text-sauge font-semibold mb-4">Ce que contient votre rituel de soin :</h4>
+                  <ul class="space-y-4">
+                    <li class="border-b border-dashed border-[#EAE5DB] pb-3">
+                        <strong class="text-sm block text-texteDark">1. Le Baume Réparateur Périnée</strong>
+                        <p class="text-xs text-[#5F6E65] mt-1">Un baume naturel qui hydrate, apaise et protège la peau délicate après l'accouchement, favorisant confort et récupération.[span_11](start_span)[span_11](end_span)</p>
+                        <p class="text-xs italic text-orDoux mt-1 bg-creme px-2 py-1 rounded border border-[#EAE5DB]/40">💡 On sourit en voyant que juste étaler une crème peut être tout un défi post-bébé [span_12](start_span)[span_12](end_span)!</p>
+                    </li>
+                    <li class="border-b border-dashed border-[#EAE5DB] pb-3">
+                        <strong class="text-sm block text-texteDark">2. La Crème Apaisante Zone Intime</strong>
+                        <p class="text-xs text-[#5F6E65] mt-1">Formule douce et efficace qui soulage l'inconfort, aide à maintenir l'élasticité de la peau et procure une sensation de douceur et de bien-être.[span_13](start_span)[span_13](end_span)</p>
+                        <p class="text-xs italic text-orDoux mt-1 bg-creme px-2 py-1 rounded border border-[#EAE5DB]/40">💡 Après l'accouchement, j'ai appliqué la crème et j'ai rigolé en me disant que même pour ça, il fallait un peu de gymnastique [span_14](start_span)[span_14](end_span)!</p>
+                    </li>
+                    <li class="border-b border-dashed border-[#EAE5DB] pb-3">
+                        <strong class="text-sm block text-texteDark">3. Le Baume Réconfort Allaitement</strong>
+                        <p class="text-xs text-[#5F6E65] mt-1">À base de lanoline pure, cette crème apaise et répare la peau en profondeur. Idéale pour l'allaitement ou toute zone sèche et irritée.[span_15](start_span)[span_15](end_span)</p>
+                        <p class="text-xs italic text-orDoux mt-1 bg-creme px-2 py-1 rounded border border-[#EAE5DB]/40">💡 Avec cette crème, mon mamelon très douloureux s'est rétabli en moins de 2 semaines et j'ai pu continuer mon allaitement sans problème [span_16](start_span)[span_16](end_span)!</p>
+                    </li>
+                    <li class="border-b border-dashed border-[#EAE5DB] pb-3">
+                        <strong class="text-sm block text-texteDark">4. L'Huile de Soin Hydratante</strong>
+                        <p class="text-xs text-[#5F6E65] mt-1">Huile douce et 100 % naturelle, spécialement formulée pour prévenir et atténuer les vergetures.[span_17](start_span)[span_17](end_span)</p>
+                        <p class="text-xs italic text-orDoux mt-1 bg-creme px-2 py-1 rounded border border-[#EAE5DB]/40">💡 Certaines mamans appellent leur cicatrice « la star du show » pendant le massage [span_18](start_span)[span_18](end_span)!</p>
+                    </li>
+                    <li class="border-b border-dashed border-[#EAE5DB] pb-3">
+                        <strong class="text-sm block text-texteDark">5. La Bouteille de Rinçage Ergonomique</strong>
+                        <p class="text-xs text-[#5F6E65] mt-1">Bouteille pratique pour rincer la zone intime après l'accouchement and réduire l'inconfort en urinant.[span_19](start_span)[span_19](end_span)</p>
+                        <p class="text-xs italic text-orDoux mt-1 bg-creme px-2 py-1 rounded border border-[#EAE5DB]/40">💡 Petit geste simple pour plus de confort.[span_20](start_span)[span_20](end_span)</p>
+                    </li>
+                    <li class="border-b border-dashed border-[#EAE5DB] pb-3">
+                        <strong class="text-sm block text-texteDark">6. La Tisane Rétablissement Post-Partum</strong>
+                        <p class="text-xs text-[#5F6E65] mt-1">Tisane à base de plantes pour soutenir le corps et favoriser le rétablissement.[span_21](start_span)[span_21](end_span)</p>
+                        <p class="text-xs italic text-orDoux mt-1 bg-creme px-2 py-1 rounded border border-[#EAE5DB]/40">💡 Parfois elle refroidit trop vite... et on la boit tiède ou froide. Mais toujours bonne [span_22](start_span)[span_22](end_span)!</p>
+                    </li>
+                    <li class="pb-3">
+                        <strong class="text-sm block text-texteDark">7. La Bougie d'Ambiance Relaxante</strong>
+                        <p class="text-xs text-[#5F6E65] mt-1">Bougie 100 % cire de soja au parfum doux et naturel.[span_23](start_span)[span_23](end_span)</p>
+                        <p class="text-xs italic text-orDoux mt-1 bg-creme px-2 py-1 rounded border border-[#EAE5DB]/40">💡 Petit plus : le récipient peut servir ensuite comme petit pot décoratif.[span_24](start_span)[span_24](end_span)</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="p-8 pt-0">
+                <button onclick="addToCart('Coffret Voie Basse', 138.39)" class="w-full bg-texteDark text-creme text-center py-4 rounded-xl font-medium hover:bg-black transition duration-200">
+                  Ajouter au panier
+                </button>
+              </div>
+          </div>
+
+          <!-- COFFRET CÉSARIENNE -->
+          <div class="bg-white rounded-2xl border border-[#EAE5DB] overflow-hidden shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="h-64 bg-gray-200 relative bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&q=80&w=600');">
+                  <div class="absolute inset-0 bg-black/10"></div>
+                  <span class="absolute top-4 right-4 bg-white/90 backdrop-blur text-texteDark px-4 py-1.5 rounded-full text-sm font-semibold tracking-wider">
+                    138.39 $ CAD
+                  </span>
+                </div>
+                <div class="p-8">
+                  <h3 class="text-2xl font-serif text-texteDark mb-3 font-semibold">Coffret Césarienne</h3>
+                  <p class="text-sm text-[#5F6E65] mb-6 leading-relaxed font-light">Un coffret haut de gamme pensé avec douceur et bienveillance, spécialement conçu pour accompagner votre rétablissement après une césarienne.[span_25](start_span)[span_25](end_span)</p>
+                  
+                  <h4 class="text-xs uppercase tracking-wider text-sauge font-semibold mb-4">Ce que contient votre rituel de soin :</h4>
+                  <ul class="space-y-4">
+                    <li class="border-b border-dashed border-[#EAE5DB] pb-3">
+                        <strong class="text-sm block text-texteDark">1. Le Soin Ciblé Cicatrice</strong>
+                        <p class="text-xs text-[#5F6E65] mt-1">Une formule naturelle qui aide à atténuer l'apparence de la cicatrice et à apaiser la peau pendant la guérison.[span_26](start_span)[span_26](end_span)</p>
+                        <p class="text-xs italic text-orDoux mt-1 bg-creme px-2 py-1 rounded border border-[#EAE5DB]/40">💡 Une maman m'a confié qu'après 2 mois d'utilisation, sa cicatrice était déjà moins visible. Ça lui a redonné l'envie de montrer son ventre [span_27](start_span)[span_27](end_span)!</p>
+                    </li>
+                    <li class="border-b border-dashed border-[#EAE5DB] pb-3">
+                        <strong class="text-sm block text-texteDark">2. Le Pansement de Protection en Silicone</strong>
+                        <p class="text-xs text-[#5F6E65] mt-1">Spécialement conçu pour protéger la cicatrice après une césarienne. Flexible, transparent, confortable, imperméable et se retire sans douleur.[span_28](start_span)[span_28](end_span)</p>
+                        <p class="text-xs italic text-orDoux mt-1 bg-creme px-2 py-1 rounded border border-[#EAE5DB]/40">💡 Certaines mamans plaisantent en disant que c'est un mini bouclier invisible pour protéger leur cicatrice superstar [span_29](start_span)[span_29](end_span)!</p>
+                    </li>
+                    <li class="border-b border-dashed border-[#EAE5DB] pb-3">
+                        <strong class="text-sm block text-texteDark">3. Le Baume Réconfort Allaitement</strong>
+                        <p class="text-xs text-[#5F6E65] mt-1">À base de lanoline pure, cette crème apaise et répare la peau in profondeur. Idéale pour l'allaitement ou toute zone sèche et irritée.[span_30](start_span)[span_30](end_span)</p>
+                        <p class="text-xs italic text-orDoux mt-1 bg-creme px-2 py-1 rounded border border-[#EAE5DB]/40">💡 Avec cette crème, mon mamelon très douloureux s'est rétabli en moins de 2 semaines et j'ai pu continuer mon allaitement sans problème [span_31](start_span)[span_31](end_span)!</p>
+                    </li>
+                    <li class="border-b border-dashed border-[#EAE5DB] pb-3">
+                        <strong class="text-sm block text-texteDark">4. L'Huile de Soin Hydratante</strong>
+                        <p class="text-xs text-[#5F6E65] mt-1">Huile douce et 100 % naturelle, spécialement formulée pour prévenir et atténuer les vergetures.[span_32](start_span)[span_32](end_span)</p>
+                        <p class="text-xs italic text-orDoux mt-1 bg-creme px-2 py-1 rounded border border-[#EAE5DB]/40">💡 Certaines mamans appellent leur cicatrice « la star du show » pendant le massage [span_33](start_span)[span_33](end_span)!</p>
+                    </li>
+                    <li class="border-b border-dashed border-[#EAE5DB] pb-3">
+                        <strong class="text-sm block text-texteDark">5. La Bouteille de Rinçage Ergonomique</strong>
+                        <p class="text-xs text-[#5F6E65] mt-1">Bouteille pratique pour rincer la zone intime après l'accouchement et réduire l'inconfort en urinant.[span_34](start_span)[span_34](end_span)</p>
+                        <p class="text-xs italic text-orDoux mt-1 bg-creme px-2 py-1 rounded border border-[#EAE5DB]/40">💡 Petit geste simple pour plus de confort.[span_35](start_span)[span_35](end_span)</p>
+                    </li>
+                    <li class="border-b border-dashed border-[#EAE5DB] pb-3">
+                        <strong class="text-sm block text-texteDark">6. La Tisane Rétablissement Post-Partum</strong>
+                        <p class="text-xs text-[#5F6E65] mt-1">Tisane à base de plantes pour soutenir le corps et favoriser le rétablissement.[span_36](start_span)[span_36](end_span)</p>
+                        <p class="text-xs italic text-orDoux mt-1 bg-creme px-2 py-1 rounded border border-[#EAE5DB]/40">💡 Parfois elle refroidit trop vite... et on la boit tiède ou froide. Mais toujours bonne [span_37](start_span)[span_37](end_span)!</p>
+                    </li>
+                    <li class="pb-3">
+                        <strong class="text-sm block text-texteDark">7. La Bougie d'Ambiance Relaxante</strong>
+                        <p class="text-xs text-[#5F6E65] mt-1">Bougie 100 % cire de soja au parfum doux et naturel.[span_38](start_span)[span_38](end_span)</p>
+                        <p class="text-xs italic text-orDoux mt-1 bg-creme px-2 py-1 rounded border border-[#EAE5DB]/40">💡 Petit plus : le récipient peut servir ensuite comme petit pot décoratif.[span_39](start_span)[span_39](end_span)</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="p-8 pt-0">
+                <button onclick="addToCart('Coffret Césarienne', 138.39)" class="w-full bg-texteDark text-creme text-center py-4 rounded-xl font-medium hover:bg-black transition duration-200">
+                  Ajouter au panier
+                </button>
+              </div>
+          </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-texteDark text-[#EAE5DB] py-12 px-6 text-center border-t border-black/10">
+        <p class="text-sm font-serif tracking-widest mb-2">PrimaMomCare</p>
+        <p class="text-xs text-[#A2B3A8] mb-4">Créé avec amour à Montréal, Québec • Contact: 514-704-8481</p>
+        <p class="text-[10px] text-[#86998D] max-w-md mx-auto">
+          Boutique PrimaMomCare — Tous droits réservés. En raison de la nature intime et hygiénique des complexes de soin, toutes les ventes sont finales.
+        </p>
+    </footer>
+
+    <!-- SIDEBAR PANIER -->
+    <div id="cart-sidebar" class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden flex justify-end">
+        <div class="w-full max-w-md bg-creme h-full p-6 shadow-2xl flex flex-col justify-between overflow-y-auto">
+            <div>
+              <div class="flex justify-between items-center border-b border-[#EAE5DB] pb-4 mb-6">
+                <h3 class="text-xl font-serif text-texteDark font-semibold">Votre Panier (Démo)</h3>
+                <button onclick="toggleCart(false)" class="text-sm text-[#5F6E65] hover:text-black font-medium">Fermer</button>
+              </div>
+              <div id="cart-content"></div>
+            </div>
+            <div id="cart-footer" class="border-t border-[#EAE5DB] pt-4 mt-6 hidden">
+                <div class="flex justify-between font-medium text-texteDark mb-6">
+                  <span>Sous-total</span>
+                  <span id="cart-total">138.39 $ CAD</span>
+                </div>
+                <button onclick="runStripeDemo()" class="w-full bg-sauge text-white py-4 rounded-xl font-medium text-center hover:bg-saugeDark transition duration-200">
+                  Procéder au paiement test
+                </button>
+                <p class="text-[11px] text-center text-[#5F6E65] mt-3 italic">
+                  🔒 Passerelle sécurisée en mode de test via Stripe.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let cart = null;
+
+        function toggleCart(open) {
+            const sidebar = document.getElementById('cart-sidebar');
+            if(open) sidebar.classList.remove('hidden');
+            else sidebar.classList.add('hidden');
+        }
+
+        function addToCart(title, price) {
+            cart = { title, price };
+            document.getElementById('cart-count').innerText = "1";
+            
+            const content = document.getElementById('cart-content');
+            content.innerHTML = `
+                <div class="flex justify-between items-center bg-white border border-[#EAE5DB] p-4 rounded-xl shadow-sm">
+                    <div>
+                      <h4 class="font-serif text-texteDark text-base font-semibold">${title}</h4>
+                      <p class="text-xs text-[#5F6E65] mt-1">Édition Master Package</p>
+                    </div>
+                    <span class="font-semibold text-sm text-texteDark">${price.toFixed(2)} $</span>
+                </div>
+            `;
+            
+            document.getElementById('cart-total').innerText = price.toFixed(2) + " $ CAD";
+            document.getElementById('cart-footer').classList.remove('hidden');
+            toggleCart(true);
+        }
+
+        function runStripeDemo() {
+            alert("Félicitations ! Votre code Vercel fonctionne. Ceci lancera la passerelle de test Stripe sécurisée pour valider l'encaissement de 138,39 $.");
+        }
+    </script>
+</body>
+</html>
